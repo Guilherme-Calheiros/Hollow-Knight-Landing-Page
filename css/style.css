@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Trojan Pro';
+    src: url(../fonts/Trajan\ Pro\ Regular.ttf);
+}
+
+:root{
+    --text-font: 'Inter', sans-serif;
+    --hollow-knight-font: 'Trojan Pro', cursive;
+    --color-01: hsl(214, 43%, 10%) ;
+    --color-02: hsl(186, 42%, 18%);
+    --color-03: hsl(27, 9%, 62%);
+    --color-04: hsl(0, 0%, 95%);
+    --color-05: hsl(0, 0%, 5%);
+}
