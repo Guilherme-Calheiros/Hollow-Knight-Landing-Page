@@ -13,6 +13,41 @@
     --color-05: hsl(0, 0%, 5%);
 }
 
+body{
+    color: var(--color-04);
+}
+
+header{
+    display: flex;
+    padding: 10px;
+}
+
+#logo{
+    margin: 0 20px;
+}
+
+#navMenu ul{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    padding: 24px 0;
+}
+
+#navMenu ul li a{
+    color: var(--color-04);
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    font: 16px var(--hollow-knight-font);
+    border-radius: 10px;
+    border: 0.5px solid hsla(0, 0%, 0%, 0);
+}
+
+#navMenu ul li a:hover{
+    border: 0.5px solid var(--color-04);
+    background-color: hsla(0, 0%, 5%, 0.473);
+}
+
 .bg_video{
     position: fixed;
     right: 0;
