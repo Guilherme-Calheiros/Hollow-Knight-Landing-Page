@@ -49,10 +49,11 @@ header{
 
 main #home{
     max-width: 1440px;
+    max-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0 auto 112px;
+    margin: 0 auto 200px;
     padding: 0 16px;
     height: 85vh;
 }
@@ -63,7 +64,7 @@ main #home{
 }
 
 #synopsis p{
-    color: var(--color-03);
+    color: var(--color-04);
     font-family: var(--hollow-knight-font);
     font-size: 14px;
     margin-top: 16px;
