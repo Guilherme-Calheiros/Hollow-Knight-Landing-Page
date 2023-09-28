@@ -76,7 +76,15 @@ main #home{
 
 #synopsis p:hover{
     border: 0.5px solid var(--color-04);
-    background-color: hsla(0, 0%, 5%, 0.473);
+    background-color: var(--color-01);
+}
+
+#home div:last-child{
+    width: 500px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main #home #homeImage{
