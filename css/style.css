@@ -90,6 +90,96 @@ main #home{
 main #home #homeImage{
     max-height: 600px;
     width: auto;
+    max-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+main #story{
+    background-color: var(--color-01);
+    border: 2px solid var(--color-02);
+    border-radius: 20px;
+    max-width: 950px;
+    padding: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#story div{
+    height: 460px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+#story div::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(transparent, var(--color-01));
+}
+
+#story h2{
+    font-family: var(--hollow-knight-font);
+    font-size: 36px;
+    text-align: center;
+}
+
+#story p{
+    text-align: justify;
+    text-indent: 50px;
+    letter-spacing: 0.5px;
+    line-height: 150%;
+    font: 16px var(--hollow-knight-font);
+    margin-top: 50px;
+}
+
+#story #credit{
+    font-size: 12px;
+    align-self: flex-start;
+    text-indent: 0;
+}
+
+#story #credit a{
+    color: var(--color-03);
+    text-decoration: none;
+}
+
+#story #credit a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+#story button{
+    border: 0;
+    color: var(--color-04);
+    background-color: var(--color-02);
+    font-size: 16px;
+    padding: 10px 16px;
+}
+
+#story button:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#story.active div{
+    height: auto;
+}
+
+#story.active div::before{
+    height: auto;
+}
+
+#characters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    height: 100vh;
     max-width: 100vw;
 }
 
