@@ -26,3 +26,16 @@ function alterarImagens(){
 }
 
 setInterval(alterarImagens, 5000);
+
+let button = document.getElementById('readMore');
+
+button.addEventListener('click', () => {
+    let readStory = document.getElementById('story');
+    readStory.classList.toggle('active');
+
+    if(readStory.classList.contains('active')) {
+       return button.textContent = "Leia menos"
+    }
+
+    button.textContent = "Leia mais"
+})
