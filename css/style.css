@@ -183,6 +183,71 @@ main #story{
     max-width: 100vw;
 }
 
+.wrapper{
+    max-width: 400px;
+    position: relative;
+}
+
+.wrapper > img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60px;
+    width: 60px;
+    background-color: var(--color-05);
+    border: 1px solid var(--color-04);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper > img:active{
+    transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper > img:first-child{
+    left: -50px;
+}
+
+.wrapper > img:last-child{
+    right: -50px;
+}
+
+.wrapper .carousel{
+    min-height: 420px;
+    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 16px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: 0;
+}
+
+.carousel .card{
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    background-color: var(--color-05);
+    box-shadow: 0px 0px 8px var(--color-04);
+    padding: 35px 10px;
+    border: 1px solid var(--color-04);
+    border-radius: 10px;
+    height: 390px;
+    width: 360px;
+    margin: 0 auto;
+}
+
+.card .image img{
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+
 .bg_video{
     position: fixed;
     right: 0;
