@@ -294,6 +294,17 @@ main #story{
     animation: appear-background 1.5s forwards;
 }
 
+footer{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--color-01);
+}
+
+footer a{
+    color: var(--color-03);
+}
+
 .bg_video{
     position: fixed;
     right: 0;
